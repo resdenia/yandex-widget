@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  box-sizing: content-box;
+}
+
+.credit-card {
+  width: 400px;
+  height: 220px;
+  background: radial-gradient(
+    91.71% 71.5% at 74.12% 61.3%,
+    #41445a 0%,
+    #1c1f26 100%
+  );
+  border-radius: 10px;
+}
+
+.credit-card label {
+  color: #fff;
+}
+
+.represent {
+  align-content: center;
+  max-width: 670px;
+  align-self: center;
+  margin: auto;
+  margin-top: 20%;
+}
+input#numberCard {
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-control label {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  display: block;
+}
+
+.form-control {
+  display: flex;
+  align-items: baseline;
+}
+
+.credit-card.represent {
+  padding: 20px;
+}
+
+.form-control input {
+  width: 100%;
+  min-height: 30px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+}
+
+input#secretCode {
+  width: 15%;
+}
+.error-container {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: red;
+  font-size: 12px;
+}
+
+.form-control {
+  position: relative;
+}
+
+.exp-date {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  margin-bottom: 20px;
+}
+
+.exp-date select {
+  min-width: 44px;
+  min-height: 30px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
