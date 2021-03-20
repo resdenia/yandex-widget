@@ -77,7 +77,20 @@ class ViewCardForm {
     document.querySelector('.credit-card').classList.add('represent');
   }
 
-  onValidateName() {}
+  onValidateName() {
+    const nameField = document.querySelector(`#${this.cardInfo[3].id}`);
+
+    cvvField.addEventListener('keyup', (e) => {
+      if (!e.target.value.match(/^[a-z ,.'-]+$/i)) {
+        this.errorMessage('CVV not valid', e.target);
+      } else {
+        const formWrapper = e.target.closest('.form-control');
+        if (formWrapper.querySelector('.error-container')) {
+          formWrapper.querySelector('.error-container').remove();
+        }
+      }
+    });
+  }
   onValidateCVV() {
     const cvvField = document.querySelector(`#${this.cardInfo[3].id}`);
     cvvField.setAttribute('maxlength', '4');
