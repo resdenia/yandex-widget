@@ -80,9 +80,9 @@ class ViewCardForm {
   onValidateName() {
     const nameField = document.querySelector(`#${this.cardInfo[3].id}`);
 
-    cvvField.addEventListener('keyup', (e) => {
+    nameField.addEventListener('keyup', (e) => {
       if (!e.target.value.match(/^[a-z ,.'-]+$/i)) {
-        this.errorMessage('CVV not valid', e.target);
+        this.errorMessage('Name Holder not valid', e.target);
       } else {
         const formWrapper = e.target.closest('.form-control');
         if (formWrapper.querySelector('.error-container')) {
